@@ -20,6 +20,8 @@ vim.opt.undofile = true
 
 
 vim.opt.scrolloff = 2
+vim.opt.splitright = true
+
 
 vim.opt.updatetime = 50
 

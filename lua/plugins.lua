@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
 
 	-- Post-install/update hook with neovim command
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+	use 'nvim-treesitter/playground'
 
     -- Status line
     use({
@@ -28,7 +29,6 @@ return require('packer').startup(function(use)
 
     -- Colorscheme
     use 'folke/tokyonight.nvim'
-
 
     use 'mbbill/undotree'
     use 'ThePrimeagen/vim-be-good'
