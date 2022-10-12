@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
     -- Colorscheme
     use 'folke/tokyonight.nvim'
 
+    use 'tpope/vim-fugitive'
     use 'mbbill/undotree'
     use 'ThePrimeagen/vim-be-good'
 end)
