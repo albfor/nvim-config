@@ -29,6 +29,16 @@ return require('packer').startup(function(use)
 
     -- Colorscheme
     use 'folke/tokyonight.nvim'
+    use 'Shatur/neovim-ayu'
+    use {
+        'catppuccin/nvim',
+        as = 'catppuccin',
+        config = function()
+            vim.g.catppuccin_flavour = 'macchiato' -- latte, frappe, macchiato, mocha
+            require('catppuccin').setup()
+            vim.api.nvim_command 'colorscheme catppuccin'
+        end
+    }
 
     use 'tpope/vim-fugitive'
     use 'mbbill/undotree'
