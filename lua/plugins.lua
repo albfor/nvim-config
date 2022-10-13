@@ -4,17 +4,17 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	-- Packer can manage itself
-	use 'wbthomason/packer.nvim'
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
 
-	-- Post-install/update hook with neovim command
-	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-	use 'nvim-treesitter/playground'
+    -- Post-install/update hook with neovim command
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    use 'nvim-treesitter/playground'
 
     -- Status line
     use({
         'nvim-lualine/lualine.nvim',
-        requries = {'kyazdani42/nvim-web-devicons', opt=true}
+        requries = { 'kyazdani42/nvim-web-devicons', opt = true }
     })
 
     -- LSP Stuff
@@ -37,6 +37,13 @@ return require('packer').startup(function(use)
 
     use 'tpope/vim-fugitive'
     use 'mbbill/undotree'
-    use 'ThePrimeagen/vim-be-good'
-end)
 
+    -- Fun practice
+    use 'ThePrimeagen/vim-be-good'
+
+    --Telescope
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        requires = { { 'nvim-lua/plenary.nvim' } }
+    }
+end)

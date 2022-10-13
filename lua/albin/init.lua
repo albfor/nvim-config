@@ -4,6 +4,7 @@ require("albin.lsp")
 require("albin.treesitter")
 require("albin.lualine")
 require("albin.colors")
+require("albin.telescope")
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
