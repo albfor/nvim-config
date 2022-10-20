@@ -27,6 +27,9 @@ return require('packer').startup(function(use)
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
 
+    -- Markdown preview
+    use 'davidgranstrom/nvim-markdown-preview'
+
     -- Colorscheme
     use 'folke/tokyonight.nvim'
     use 'Shatur/neovim-ayu'
