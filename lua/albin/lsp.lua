@@ -72,6 +72,11 @@ require("lspconfig")["sumneko_lua"].setup {
     },
 }
 
+require("lspconfig")["vuels"].setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
+
 require("lspconfig")["tsserver"].setup {
     capabilities = capabilities,
     on_attach = on_attach,
